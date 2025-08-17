@@ -87,10 +87,10 @@ Nsec = 33;
 % 创建一个滤波器对象
 fs = 1e6;  % 假设采样频率为1MHz
 
-%创建一个包含1hz，50hz，100hz，500hz，1000hz，2000hz，5000hz，10khz的信号
+%创建一个包含1hz，50hz，1000hz，2000hz，5000hz，10khz的信号
 t = 0:1/fs:1;  % 1秒的时间向量
-signal = sin(2*pi*1*t) + sin(2*pi*50*t) + sin(2*pi*100*t)...
- + sin(2*pi*500*t) + sin(2*pi*1000*t) + sin(2*pi*2000*t)...
+signal = sin(2*pi*1*t) + sin(2*pi*50*t)...
++ sin(2*pi*1000*t) + sin(2*pi*2000*t)...
 + sin(2*pi*5000*t) + sin(2*pi*10000*t);
 
 %原始信号频谱
